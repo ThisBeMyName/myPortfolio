@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Mike Stewart - Blog</title>
+		<link rel="icon" type="image/png" href="/images/logo.png">
+		<link type="text/css" rel="stylesheet" href="blog.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav
+			class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom transparent fixed-top"
+			id="nav"
+		>
+
+			<div>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/about/about.html">About</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/projects/gallery.html">Projects</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" href="/blog/blog.html">Blog</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="/contact/contact.html">Contact</a>
+				  </li>
+				</ul>
+			  </div>
+		</nav>
+
+		<!-- Header -->
+		<div id="posts">
+			<h1 id="title">Code Blog</h1>
+
+<!-- Entry -->
+			<div class="post">
+				<div class="date">Feburary 8th, 2021</div>
+
+				<h2>React</h2>
+
+				<p class="tldr">TLDR - What is React? How do I use it? What the blast am I even doing??</p>
+
+				<p class="postText">
+					They say 'If You’re Feeling Uncomfortable, That’s when growth happens'. I think that's a feeling I've been accepting. I don't think you really get used to it, but it maybe more something you forget is there, or it ebbs the more you grow, then you forget how strong it felt in the beginning.
+				</p>
+
+				<p class="postText"> 
+					It always feels like that when I dive into a new technology. That feeling of uneasiness. Maybe I'm painting this in too much of a harsh light. It's not that it's bad, it's more of a question 'Where do I begin?'. There's always my trusty tools I go to.. Youtube, Google, code forums. Thus was how my journey into React started.
+				</p>
+
+				<p class="postText">
+					On a basic level, I knew what it was. A Javascript framework, right? It's one of those keywords you hear at some point in tech. As some point though, you just have to dive right in. You can watch all you want how to ride a bike, but until you get one one and bomb down a hill (as in my case), you'll never learn how to do it.
+				</p>
+
+				<p>
+					
+				</p>
+
+			</div>
+			<hr />
+
+			<!-- End entry -->
+
+			<!-- Entry -->
+			<div class="post">
+				<div class="date">December 31st, 2020</div>
+
+				<h2>Random Quote Generator</h2>
+
+				<p class="tldr">TLDR - Generates random bodybuilding quotes using an API. Ran into issues incorporating the API data, but was able to work throug them pretty easy</p>
+
+				<p class="postText">
+					This one was a pretty fun project to work on. Most of it was pretty strait forward. I ran into most of my issues when trying to implement the API portion. My first issue was I needed a key, but that was pretty easy to work around. Next, after running several tests, I kept getting a "Cors" error. I found a few workarounds for this one, but eventually shifted to another API (originally it was an API with motivational quotes, but I found another that had bodybuilding quotes I liked better). I didn't run into the error with this new API.
+				</p>
+
+				<p class="postText">
+					The hard part was pulling the data I needed from the response. After digging through the json a bit, I found the correct endpoints. At first, I felt a bit lost.. but in the sense that I was blind and knew braille (I knew how to use an API) and was given a map in braille. I had to comb over it several times until I got a bit more familure with it and could find my way around the data.
+				</p>
+
+				<p class="postText">
+					Once I had this, plugging in the peaces was pretty easy. I did run into a few other minor issues, but most of it was due to typos in the code.
+				</p>
+
+			</div>
+			<hr />
+
+			<!-- End entry -->
+
+		</div>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

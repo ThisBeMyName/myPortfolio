@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Color Changer</title>
+</head>
+	
+<body>
+	
+	<h1 id="someText">Let's change the color!</h1>
+	
+  <button type="button" onclick="colorChange()">Click Here!</button>
+	
+	<script>
+	function colorChange (){
+		document.body.style.backgroundColor = "red";
+		document.getElementById("someText").innerHTML = "Hooray! We did it!!";
+	}
+</script>
+	
+</body>
+
+</html>

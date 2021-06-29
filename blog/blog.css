@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comfortaa&family=Merienda&family=Oswald&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+	opacity: 0.9;
+}
+
+.nav-link {
+	font-family: Oswald, sans-serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='50' viewBox='0 0 100 50'%3E%3Cdefs%3E%3Crect stroke='%23000000' stroke-width='0.04' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23000000' stroke-width='0.04'%3E%3Crect fill='%23050505' width='1' height='1'/%3E%3Crect fill='%23000000' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%230a0a0a' width='1' height='1' y='1'/%3E%3Crect fill='%230f0f0f' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23141414'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%231a1a1a'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23000000'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%231f1f1f'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%238320bb'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%238320bb'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100' height='50'/%3E%3Crect fill='url(%23b)' width='100' height='50'/%3E%3Crect fill='url(%23c)' width='100' height='50'/%3E%3Crect fill='url(%23d)' width='100' height='50'/%3E%3Crect fill='url(%23e)' width='100' height='50'/%3E%3Crect fill='url(%23f)' width='100' height='50'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 20px;
+}
+
+.container {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#posts {
+	border: 20px solid rgb(65, 71, 73);;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: black;
+}
+
+#title{
+    font-size: 90px;
+    font-weight: bold;
+    background: linear-gradient(to right, #7927b2, #fb3182);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: .77;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.date {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.tldr {
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.623);
+    font-size: 1.0rem;
+    border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+h2 {
+    color: white;
+}
+
+.postText {
+    color: white;
+}
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+  margin-bottom: 20px;
+}
+
+.update {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    #posts {
+        border: 20px solid #bdc3c7;
+        padding: 20px;
+        width: 90%;
+        margin: 20px auto;
+        margin-top: 100px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }  
+}
+
+
+
+@media screen and (min-width: 1100px) (max-width: 1450px) {
+    #posts {
+        border: 20px solid #bdc3c7;
+        padding: 20px;
+        width: 70%;
+        margin: 20px auto;
+        margin-top: 100px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }  
+}

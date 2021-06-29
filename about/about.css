@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comfortaa&family=Merienda&family=Oswald&display=swap');
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+	opacity: 0.9;
+}
+
+.nav-link {
+	font-family: Oswald, sans-serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#scroll {
+  color: white;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.4),
+    0px 18px 23px rgba(0, 0, 0, 0.4);
+}
+
+.parallax {
+  text-align: center;
+	padding-top: 15%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.4),
+    0px 18px 23px rgba(0, 0, 0, 0.4);
+  min-height: 800px;
+  background: transparent;
+}
+
+.parallaxDark {
+  text-align: center;
+	padding-top: 15%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.4),
+    0px 18px 23px rgba(0, 0, 0, 0.4);
+  min-height: 800px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 5em;
+}
+
+h2 {
+  color: white;
+	padding: 10px;
+}
+
+h2.fire{
+  color: white;
+	padding: 10px;
+}
+
+h2.firelast{
+  color: white;
+	padding: 10px;
+	padding-bottom: 50px;
+	margin: 0;
+}
+
+h3 {
+  color: white;
+}
+
+hr {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
