@@ -1,3 +1,4 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comfortaa&family=Merienda&family=Oswald&display=swap');
 
 html, body {
@@ -12,6 +13,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* General Navbar Styling */
 #nav {
   opacity: 0.6;
 }
@@ -22,6 +24,7 @@ body {
   letter-spacing: 3px;
 }
 
+/* Content Section Styling */
 #content {
   text-align: center;
   padding-top: 25%;
@@ -47,4 +50,71 @@ hr {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger-menu .bar {
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Side Navigation Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially offscreen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  padding-top: 50px;
+  z-index: 99;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+}
+
+/* When the menu is visible */
+.nav-menu.open {
+  left: 0; /* Slide in */
+}
+
+/* Hide the hamburger menu on larger screens */
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none; /* Hide the hamburger menu on larger screens */
+  }
+
+  .nav-menu {
+    left: 0; /* Ensure the menu is always visible on larger screens */
+  }
 }
