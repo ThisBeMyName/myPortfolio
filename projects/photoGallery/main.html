@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter Up & Paint</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Shutter Up & Paint</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="pages/contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Discover beautiful artwork</p>
+    </header>
+
+    <section class="parallax"></section>
+
+    <main id="gallery" class="gallery">
+        <div class="art-piece">
+            <img src="https://images.unsplash.com/photo-1577083639236-0f560d3d771c?q=80&w=2867&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art 1">
+            <h3>Art Piece Title 1</h3>
+            <p>Artist: Artist Name 1</p>
+            <p>Price: $100</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="art-piece">
+            <img src="../photoGallery/images/skull.jpg" alt="Description of image">
+            <h3>Art Piece Title 2</h3>
+            <p>Artist: Artist Name 2</p>
+            <p>Price: $150</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="art-piece">
+            <img src="../photoGallery/images/ror.jpg" alt="Description of image">
+            <h3>Art Piece Title 3</h3>
+            <p>Artist: Artist Name 3</p>
+            <p>Price: $200</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="art-piece">
+            <img src="../photoGallery/images/man.jpg" alt="Description of image">
+            <h3>Art Piece Title 4</h3>
+            <p>Artist: Artist Name 4</p>
+            <p>Price: $250</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="art-piece">
+            <img src="../photoGallery/images/colors.jpg" alt="Art 5">
+            <h3>Art Piece Title 5</h3>
+            <p>Artist: Artist Name 5</p>
+            <p>Price: $300</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="art-piece">
+            <img src="../photoGallery/images/image1_0.jpg" alt="Art 6">
+            <h3>Art Piece Title 6</h3>
+            <p>Artist: Artist Name 6</p>
+            <p>Price: $350</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </main>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>In addition to our gallery, we offer professional photography services as well as custom frames to showcase your artwork beautifully.</p>
+        <ul>
+            <p>Photography</p>
+            <p>Custom Framing</p>
+            <p>Art Consultation</p>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>Email: info@artgallery.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shutter Up and Paint. All rights reserved. Built by <a href="https://thisbemyname.github.io/myPortfolio/">Mike Stewart</a></p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const parallax = document.querySelector('.parallax');
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            // Adjust opacity based on scroll position
+            const opacity = 1 - (scrollPosition / (windowHeight / 2));
+            parallax.style.opacity = Math.max(opacity, 0); // Prevent negative opacity
+        });
+    </script>
+</body>
+</html>

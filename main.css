@@ -22,24 +22,46 @@ html {
 }
 
 #content {
+	display: flex;                  /* Use Flexbox for centering */
+	flex-direction: column;          /* Stack children vertically */
+	justify-content: center;         /* Center children vertically */
+	align-items: center;             /* Center children horizontally */
 	text-align: center;
-	padding-top: 25%;
-	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.4),
-		0px 18px 23px rgba(0, 0, 0, 0.4);
+	height: 50vh;                   /* Take full viewport height */
 }
+
 h1 {
 	font-weight: 700;
 	color: white;
 	font-size: 5em;
+	background: -webkit-linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3 {
 	color: white;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.4),
+	0px 18px 23px rgba(0, 0, 0, 0.4);
 }
 
-h2 {
+.subheader {
 	color: white;
+	width: 22ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: cursor 1s step-start, 
+		text 3s steps(40);
 }
+  
+  @keyframes text {
+	0% { 
+	  width: 0; 
+	}
+	100% { 
+	  width: 22ch; 
+	}
+  }
 
 hr {
 	width: 400px;

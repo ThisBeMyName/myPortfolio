@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+.parallax {
+    background-image: url('../photoGallery/images/title.jpg');
+    height: calc(100vh - 100px); /* Adjust as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.art-piece {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.art-piece:hover {
+    transform: scale(1.05);
+}
+
+.art-piece img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+#services, #contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack items vertically */
+        margin: 10px 0;
+    }
+
+    .parallax {
+        height: 400px; /* Reduce height for smaller screens */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Full width on small screens */
+    }
+
+    .buy-button {
+        padding: 10px; /* Adjust button size */
+        width: 100%; /* Make buttons full width */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Less margin for smaller devices */
+    }
+
+    .parallax {
+        height: 300px; /* Further reduce height for very small screens */
+    }
+
+    .art-piece {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .buy-button {
+        padding: 8px; /* Smaller button padding for very small screens */
+    }
+}
